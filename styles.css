@@ -6,8 +6,14 @@
 }
 
 body {
-    background: rgb(44, 44, 93);
-    color: rgb(235, 247, 13);
+    background: #2c2c5d;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.secao {
+    padding: 100px 0;
+    padding-left: 50px;
 }
 
 header {
@@ -25,24 +31,28 @@ ul {
     list-style: none;
     gap: 50px;
     cursor: pointer;
+    color: #bbb;
+}
+ul li:hover {
+    color: #e6f119;
 }
 
 .principal {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin: 70px 0px 70px 50px;
     min-width: 85vh;
 }
 
 .principal h1 {
     font-size: 80px;
     line-height: 1.1;
-    margin-bottom: 20px;
-    letter-spacing: -4;
+    margin: 50px 0 20px;
+    letter-spacing: -4px;
 }
 
 .principal h1 span {
-    color: rgb(247, 95, 13);
+    color:  #e6f119;
 }
 
 .principal p {
@@ -55,7 +65,7 @@ ul {
 
 .button {
     display: inline-block;
-    background-color: rgb(247, 95, 13);
+    background-color: #000000;
     color: #fff;
     padding: 15px 30px;
     border-radius: 10px;
@@ -64,7 +74,147 @@ ul {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .button:hover {
-    background: rgb(235, 247, 13);
+    background:  #e6f119;
     color: rgb(44, 44, 93);
+}
+
+.titulo-secao {
+    font-size: 42px;
+    margin: 60px 0;
+    position: relative;
+}
+.titulo-secao::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background:  #e6f119;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.card-projeto img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.grads {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));/* quando colocar resposividade colocar 1fr */
+    gap: 30px;
+}
+
+.card-projeto {
+    background: #25599b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-projeto-info {
+    padding: 20px;
+}
+
+.card-projeto-info h3 {
+    margin-bottom: 10px;
+}
+
+.card-projeto-info p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.card-projeto-info a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #e6f119;
+}
+
+.sobre {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.sobre-img {
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #e6f119;
+    padding: 20px;
+    margin-left: auto;
+}
+
+.sobre-conteudo h2 {
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo p {
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ecf803af;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color:  #000000;
+}
+
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 500px;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato a {
+    padding: 15px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.email {
+    background: #ab0101;
+}
+.linkedin {
+    background: #1236ec;
+}
+.github {
+    background: #262626;
+}
+.whatsapp {
+    background: #20841d;
+}
+
+footer {
+    color: #000000;
+    padding: 20px 5%;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.efeito-cursor {
+    transition: transform 0.4s ease-in-out;
+}
+.efeito-cursor:hover {
+    transform: translateY(-15px);
 }
