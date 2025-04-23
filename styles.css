@@ -40,10 +40,13 @@ ul {
     display: flex;
     list-style: none;
     gap: 50px;
-    cursor: pointer;
-    color: #bbb;
+    cursor: pointer;   
 }
-ul li:hover {
+ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+ul li a:hover {
     color: #1bf02d;
 }
 
@@ -212,6 +215,10 @@ ul li:hover {
 }
 .whatsapp {
     background: #20841d;
+}
+.top{
+    display: flex;
+    justify-content: center;
 }
 
 footer {
