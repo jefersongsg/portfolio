@@ -165,7 +165,7 @@ ul {
 }
 .grads {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));/* quando colocar resposividade colocar 1fr */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));/* quando colocar resposividade colocar 1fr */
     gap: 30px;
 }
 .card-projeto {
@@ -281,11 +281,13 @@ header {
     font-size: 15px;
     }
 .secao {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 20px;
     }
 .principal {
     display: flex;
     align-items: center;
+    margin: 30px 20px 70px 20px;
+    max-width: 0vw;
     }
 .sobre {
     grid-template-columns: 1fr;
